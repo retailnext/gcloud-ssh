@@ -1,1 +1,3 @@
-GOOS=linux GOARCH=amd64 CGO_ENABLED=0 GO111MODULE=on go build
+# gcloud-ssh
+
+This is a wrapper around ssh and scp to allow ansible and ansible tower/awx to launch jobs on managed instances using gcloud login with a service account with iam.serviceAccounts.actAs permission and with no need of installing private SSH keys on the managed instances.
